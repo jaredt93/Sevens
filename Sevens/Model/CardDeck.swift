@@ -44,7 +44,7 @@ class CardDeck: ObservableObject {
 
     // Method runs when user taps the card
     func cardTapped() {
-        if cards[currentCard].value == "7" {
+        if cards[currentCard].value == "7" || cards[currentCard].value == "K" && cards[currentCard].suit == "diamond" {
             isSeven = true
             timerFlag = true
             animationOpacity = 1.0
@@ -57,7 +57,7 @@ class CardDeck: ObservableObject {
     
     // Check and animate Sevens
     func checkSeven() {
-        if cards[currentCard].value == "7" {
+        if cards[currentCard].value == "7" || cards[currentCard].value == "K" && cards[currentCard].suit == "diamond" {
             animationOpacity = 0
             
             withAnimation(Animation.linear(duration: 0.5).repeatForever(autoreverses: true)) {
@@ -78,7 +78,9 @@ class CardDeck: ObservableObject {
     
     // Exits the Timer early
     func exitTimer() {
-        sevens -= 1
+        if cards[currentCard].value == "7" {
+            sevens -= 1
+        }
         
         if currentCard < 51 {
             currentCard += 1
@@ -102,7 +104,7 @@ class CardDeck: ObservableObject {
             bToBSevens = false
                 
             for cardNumber in 0 ..< 51 {
-                if cards[cardNumber].value == "7" && cards[cardNumber + 1].value == "7" {
+                if (cards[cardNumber].value == "7" && cards[cardNumber + 1].value == "7") || ((cards[cardNumber].value == "K" && cards[currentCard].suit == "diamond") && cards[cardNumber + 1].value == "7") {
                     bToBSevens = true
                     break
                 }

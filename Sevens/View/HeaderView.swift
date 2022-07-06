@@ -11,13 +11,14 @@ struct HeaderView: View {
     
     var body: some View {
         HStack {
-            Text("\(cardDeck.cards.count - cardDeck.currentCard)")
+            Text("\(cardDeck.cards.count - cardDeck.currentCard) cards left")
             
             Spacer()
             
             Button(action: {
                 cardDeck.newGame()
             }) {
+                Text("New Deck")
                 Image(systemName: "shuffle")
             }
         }

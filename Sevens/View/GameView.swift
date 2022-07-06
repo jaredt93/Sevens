@@ -11,12 +11,12 @@ struct GameView: View {
     @EnvironmentObject var cardDeck: CardDeck
     
     var body: some View {
-        ZStack {
-            VStack {
-                HeaderView()
-                CardView()
-                SevensRemainingView()
-            }
+        VStack {
+            HeaderView()
+            Spacer()
+            CardView()
+            Spacer()
+            SevensRemainingView()
         }
         .foregroundColor(cardDeck.cards[cardDeck.currentCard].suit == "heart" || cardDeck.cards[cardDeck.currentCard].suit == "diamond" ? .red : .primary)
     }

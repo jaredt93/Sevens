@@ -12,8 +12,7 @@ struct TimerView: View {
     // Timer
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     // Time remaining in timer
-    @State private var timeRemaining = 30
-    let drinkAmount = ["TAKE A SIP", "FINISH HALF YOUR DRINK", "FINISH YOUR DRINK", "WATERFALL"]
+    @State private var timeRemaining = Int.random(in: 5...10)
     
     var body: some View {
         GeometryReader { geometry in

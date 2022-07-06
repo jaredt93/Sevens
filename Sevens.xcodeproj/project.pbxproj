@@ -87,13 +87,13 @@
 		7FEB3D6926091C190022D43F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7F2D6A8E259261AD00DE58F1 /* ContentView.swift */,
 				7FF26CC8261698CE00C4AFAB /* HeaderView.swift */,
 				7FEB3D6326091BFD0022D43F /* CardView.swift */,
 				7FF26CC52614A57000C4AFAB /* SevensRemainingView.swift */,
+				7FF26CCC26169AC200C4AFAB /* GameView.swift */,
 				7FC8FF382639ADC700AB4F90 /* StartView.swift */,
 				7FEB3D6626091C120022D43F /* TimerView.swift */,
-				7FF26CCC26169AC200C4AFAB /* GameView.swift */,
-				7F2D6A8E259261AD00DE58F1 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sevens/Preview Content\"";
 				DEVELOPMENT_TEAM = 8XCM92Q3Y3;
 				ENABLE_PREVIEWS = YES;
@@ -322,7 +322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jtapps.sevens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -336,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sevens/Preview Content\"";
 				DEVELOPMENT_TEAM = 8XCM92Q3Y3;
 				ENABLE_PREVIEWS = YES;
@@ -346,7 +346,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jtapps.sevens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
